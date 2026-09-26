@@ -1,0 +1,64 @@
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+# 01 — Environment Setup
+
+
+The lab's foundational build is as follows:
+1. **Firewall** — sits at the edge of the network, controlling what traffic moves between the internal environment and the outside world. 
+
+2. **Domain Server** — falls right behind the firewall. As the domain controller, it's the authority for identity and DNS within the network, but still routes through the firewall for anything beyond that.
+
+3. **Desktop1 and Desktop2** — the actual endpoints sitting behind both. They're what the rest of the setup exists to serve, and what everything above them gets tested against.
+---
+
+## What was built
+
+**Virtual Machines**
+- **Windows Server 2022** — domain controller, static IP 192.168.1.10
+- **Windows 10 Pro (Desktop1)** — client endpoint, static IP 192.168.1.100
+- **Windows 10 Pro (Desktop2)** — client endpoint, static IP 192.168.1.101
+- **OPNsense** — firewall/gateway, LAN 192.168.1.1, WAN internet-facing
+
+All VMs run on an isolated internal network (192.168.1.0/24), kept separate from the physical host network.
+
+![VM list in hypervisor](./screenshots/vm-list.png)
+
+![Network diagram](./screenshots/network-diagram.png)
+
+---
+## Key Lessons Learned for the setup
+
+- **Check the installer's edition options before assuming they'll be there** — not every ISO offers a choice between Server Core and Desktop Experience, and once installed, there's no converting between them on Server 2016 and later.
+- **A domain controller needs a static IP, not a DHCP-assigned one** — without a DHCP server on the network at all, the Server defaulted to an APIPA address (169.254.x.x), a good reminder of why DCs are configured statically as standard practice regardless.
+- **Verify the firewall independently before troubleshooting anything behind it** — testing OPNsense's WAN connectivity directly (a simple ping out) before touching the DC or clients meant any later networking issue could be isolated to what's actually behind the firewall, not the firewall itself.
+- **An "installation source" error isn't always the file — check how it's mounted first** — a failed ISO attachment in the hypervisor's virtual drive settings produced the same error a corrupted download would, and checking the simpler cause first saved a re-download.
