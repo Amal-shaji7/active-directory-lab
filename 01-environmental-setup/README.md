@@ -13,9 +13,9 @@ The lab's foundational build is as follows:
 ## What was built
 
 **Virtual Machines**
-- **Windows Server 2022** — domain controller, static IP 192.168.1.10
-- **Windows 10 Pro (Desktop1)** — client endpoint, static IP 192.168.1.100
-- **Windows 10 Pro (Desktop2)** — client endpoint, static IP 192.168.1.101
+- **Windows Server 2022** — domain controller, static IP {192.168.1.10}
+- **Windows 10 Pro (Desktop1)** — client endpoint, static IP {192.168.1.100}
+- **Windows 10 Pro (Desktop2)** — client endpoint, static IP {192.168.1.101}
 - **OPNsense** — firewall/gateway, LAN 192.168.1.1, WAN internet-facing
 
 All VMs run on an isolated internal network (192.168.1.0/24), kept separate from the physical host network.
