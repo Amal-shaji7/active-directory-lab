@@ -20,9 +20,9 @@ The lab's foundational build is as follows:
 
 All VMs run on an isolated internal network (192.168.1.0/24), kept separate from the physical host network.
 
-![VM list in hypervisor](./screenshots/vm-list.png)
+![VM list in hypervisor](./screenshot/vm-list.png)
 
-![Network diagram](./screenshots/network-diagram.png)
+![Network diagram](./screenshot/network-diagram.png)
 
 ---
 ## Key Lessons Learned for the setup
