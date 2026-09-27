@@ -9,7 +9,7 @@
 **Organizational Units:** The OU for this project is structured based on real-life scenarios and departments, including HR and IT, rather than a flat list of users. 
 ** Security Groups:** Created per department
 
-![Security groups](./screenshots/security-groups.png)
+![Security groups](./screenshots/security-group.png)
 
 **Users:** After creation of the OU, users were created and assigned to their respective OU and group. This includes user "James", a part of the HR OU, and this user is used throughout the project to mimic various real-life troubleshooting scenarios.
 
