@@ -24,7 +24,7 @@ This isn't a checklist of features clicked through in isolation; every piece her
 
 | Folder | Covers |
 |---|---|
-| [`01-environment-setup`](./01-environment-setup) | VM build, networking, hypervisor configuration |
+| [`01-environment-setup`](01-environment-setup) | VM build, networking, hypervisor configuration |
 | [`02-active-directory`](./02-active-directory) | Domain setup, OU design, users, groups |
 | [`03-least-privilege-delegation`](./03-least-privilege-delegation) | Delegated admin rights, share/printer permission tiers |
 | [`04-group-policy`](./04-group-policy) | GPO-based restrictions and software deployment |
