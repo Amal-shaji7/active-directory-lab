@@ -15,7 +15,7 @@ For this project, a dedicated `Helpdesk` account was created and given a limited
 
 **Not granted:** Domain Admin membership, and any rights over groups, computers, Group Policy objects, or the OU structure itself.
 
-![SG-IT members](./screenshots/sg-it-members.png)
+![SG-IT members](./screenshots/sg-it-member.png)
 
 ![SG-IT entry on the HR OU's Security tab](./screenshots/sg-it-ou-security.png)
 
@@ -49,8 +49,10 @@ After setting up the rights, it was tested out to see if it worked. So after log
 | Reset the built-in Administrator's password | ❌ Unable to do | Outside the delegated OUs, and privileged accounts are additionally protected |
 
 
-![New menu on the IT OU, user objects only](./screenshots/helpdesk-no-new-ou.png)
-![New menu on the HR OU, user objects only](./screenshots/helpdesk-no-new-ou.png)
+![New menu on the IT OU, user objects only](./screenshots/helpdesk-no-new-hr-ou.png)
+![New menu on the HR OU, user objects only](./screenshots/helpdesk-no-new-it-ou.png)
+
+
 ---
 
 ## Key Lessons Learned
