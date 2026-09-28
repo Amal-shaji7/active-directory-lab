@@ -23,8 +23,6 @@ For this project, a dedicated `Helpdesk` account was created and given a limited
 
 The account is used from a Windows 10 client through RSAT, rather than by logging into the domain controller.
 
-![Helpdesk resetting a user's password](./screenshots/helpdesk-reset-password.png)
-
 ---
 
 ## Design Reasoning
@@ -49,6 +47,7 @@ After setting up the rights, it was tested out to see if it worked. So after log
 | Reset the built-in Administrator's password | ❌ Unable to do | Outside the delegated OUs, and privileged accounts are additionally protected |
 
 
+![Helpdesk resetting a user's password](./screenshots/helpdesk-reset-password.png)
 ![New menu on the IT OU, user objects only](./screenshots/helpdesk-no-new-hr-ou.png)
 ![New menu on the HR OU, user objects only](./screenshots/helpdesk-no-new-it-ou.png)
 
