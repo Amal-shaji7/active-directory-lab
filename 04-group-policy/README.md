@@ -17,7 +17,7 @@ For this GPO, the scenario involved the company deciding to push a particular so
 
 
 
-![Firefox package properties in the Software Installation GPO](./screenshots/firefox-deployment-gpo.png)
+![Firefox package properties in the Software Installation GPO](./screenshots/software-deployment-gpo.png)
 
 **Delegated Remote Desktop access**
 In case of an issue that requires the helpdesk to work on the machine directly/hands-on, remote desktop would be necessary, but setting it up on every machine individually doesn't scale. Also in case of a new device joins the domain, it could be forgotten. So a GPO was created with access granted through Group Policy Preferences and adding the security group `SG-IT` into it so any current or future workstation in scope gets this access automatically.
