@@ -28,7 +28,7 @@ This isn't a checklist of features clicked through in isolation; every piece her
 | [`02-active-directory`](02-active-directory/README.md) | Domain setup, OU design, users, groups |
 | [`03-least-privilege-delegation`](03-least-privilege-delegation/README.md) | Delegated admin rights, share/printer permission tiers |
 | [`04-group-policy`](04-group-policy/README.md) | GPO-based restrictions and software deployment |
-| [`05-file-shares`](./05-file-shares) | Departmental share setup and NTFS/share permissions |
+| [`05-file-shares`](05-file-shares/README.md) | Departmental share setup and NTFS/share permissions |
 | [`06-printer-deployment`](./06-printer-deployment) | Centralized printer setup and access control |
 | [`07-remote-access-tools`](./07-remote-access-tools) | RDP, Remote Registry, Remote Assistance |
 | [`08-troubleshooting-scenarios.md`](./08-troubleshooting-scenarios.md) | Full incident writeups, linking back to relevant folders |
