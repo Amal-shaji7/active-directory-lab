@@ -10,7 +10,7 @@ For this section, I created a couple of shared drives and set them up to reflect
 Firstly, I set up a departmental drive that is to be accessible to the entire HR department. Since the access should follow a departmental membership, and not a specific person, permissions on this share were set up on `SG-HR-Users`. Thus, anyone added to the group now or in the future would be able to access its contents automatically, and anyone who is removed from the group would immediately lose access to the content as well. All while not touching the share itself.
 
 
-![HR share NTFS permissions showing SG-HR-Users and SG-IT](./screenshots/hr-share-permissions.png)
+![HR share NTFS permissions showing SG-HR-Users and SG-IT](./screenshots/hr-share-permission.png)
 
 **Personal share (mapped to P: via Home Folder)**
 Following that, an individual home was created that is tied to a specific user, `James`, which was configured through the user's  **Home Folder** attribute in AD rather than a manually mapped drive. Thus, the user is able to access it on any machine they log onto, rather than depending on a login script or manual setup every time. As opposed to the HR Share, this one is deliberately meant for an individual account, as the prime point for a home folder is privacy. No other users within the HR OU would be able to access this folder.
